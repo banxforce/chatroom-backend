@@ -2,11 +2,7 @@ package com.banx.utils;
 
 import org.springframework.beans.BeanUtils;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * Bean 属性复制工具类
@@ -27,7 +23,7 @@ public class BeanCopyUtils {
      */
     public static <V> V copyBean(Object source, Class<V> clazz) {
         // 创建目标对象
-        V result = null;
+        V result;
         try {
             result = clazz.getConstructor().newInstance();
             // 实现属性复制

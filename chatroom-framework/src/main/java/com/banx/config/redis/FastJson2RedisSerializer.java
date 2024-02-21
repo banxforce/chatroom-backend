@@ -16,7 +16,7 @@ public class FastJson2RedisSerializer<T> implements RedisSerializer<T> {
             "com.banx"
     );
 
-    private Class<T> clazz;
+    private final Class<T> clazz;
 
     public FastJson2RedisSerializer(Class<T> clazz) {
         super();

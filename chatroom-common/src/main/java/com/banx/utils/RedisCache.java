@@ -1,6 +1,5 @@
 package com.banx.utils;
 
-import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.BoundSetOperations;
 import org.springframework.data.redis.core.HashOperations;
@@ -87,7 +86,6 @@ public class RedisCache {
     /**
      * 删除单个对象
      *
-     * @param key
      */
     public boolean deleteObject(final String key)
     {
@@ -98,7 +96,6 @@ public class RedisCache {
      * 删除集合对象
      *
      * @param collection 多个对象
-     * @return
      */
     public long deleteObject(final Collection collection)
     {

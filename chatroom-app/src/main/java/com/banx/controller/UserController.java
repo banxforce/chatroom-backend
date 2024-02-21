@@ -1,18 +1,12 @@
 package com.banx.controller;
 
-import com.banx.core.LoginUser;
 import com.banx.core.ResponseResult;
-import com.banx.core.entity.User;
 import com.banx.domain.pojo.UserInfo;
 import com.banx.dto.LoginBody;
 import com.banx.service.UserService;
-import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.*;
 
-import javax.swing.plaf.PanelUI;
 import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
